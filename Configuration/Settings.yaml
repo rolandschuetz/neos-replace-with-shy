@@ -1,0 +1,11 @@
+
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        CodeQ.ReplaceWithShy: true
+
+CodeQ:
+  ReplaceWithShy:
+    replaceWithShy: \|\|
+    basicRegex: '(?=[^<]*+(?:<(?!\/?(?:textarea|pre|script)\b)[^<]*+)*+(?:<(?>textarea|pre|script)\b|\z))'

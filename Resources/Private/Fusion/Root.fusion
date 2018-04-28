@@ -1,0 +1,11 @@
+prototype(CodeQ.ReplaceWithShy:ReplaceWithShy) < prototype(Fusion:Value) {
+    addShy = true
+    regex = ${'/(?>(\S)' + Configuration.setting('CodeQ.ReplaceWithShy.replaceWithShy') + '(\S))' + Configuration.setting('CodeQ.ReplaceWithShy.basicRegex') + '/'}
+    replace = ${this.addShy ? '$1&shy;$2' : '$1$2'}
+    value = ${String.pregReplace(value, this.regex, this.replace)}
+
+    @if {
+        environment = ${!this.addShy || node.context.live || node.context.currentRenderingMode.preview}
+        config = ${Type.isString(Configuration.setting('CodeQ.ReplaceWithShy.replaceWithShy'))}
+    }
+}
