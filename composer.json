@@ -4,7 +4,7 @@
     "name": "codeq/replacewithshy",
     "license": "MIT",
     "require": {
-        "typo3/flow": "~4.0 || dev-master"
+        "neos/neos": "~3.0 || dev-master"
     },
     "autoload": {
         "psr-4": {

@@ -1,4 +1,4 @@
-prototype(CodeQ.ReplaceWithShy:ReplaceWithShy) < prototype(Fusion:Value) {
+prototype(CodeQ.ReplaceWithShy:ReplaceWithShy) < prototype(Neos.Fusion:Value) {
     addShy = true
     regex = ${'/(?>(\S)' + Configuration.setting('CodeQ.ReplaceWithShy.replaceWithShy') + '(\S))' + Configuration.setting('CodeQ.ReplaceWithShy.basicRegex') + '/'}
     replace = ${this.addShy ? '$1&shy;$2' : '$1$2'}
