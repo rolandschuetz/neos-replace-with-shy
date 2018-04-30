@@ -25,7 +25,10 @@ The `--no-update` command prevent the automatic update of the dependencies. Afte
 e.g. you would probably want to normalize full page output like this:
 
 ```
-prototype(Page).@process.shy = CodeQ.ReplaceWithShy:ReplaceWithShy
+prototype(Page) {
+    titleTag.content.@process.shy = CodeQ.ReplaceWithShy:ReplaceWithShy
+    body.@process.shy = CodeQ.ReplaceWithShy:ReplaceWithShy
+}
 ```
 
 ## License
