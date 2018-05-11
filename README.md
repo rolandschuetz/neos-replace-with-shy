@@ -1,7 +1,5 @@
-[![Latest Stable Version](https://poser.pugx.org/codeq/replacewithshy/v/stable)](https://packagist.org/packages/codeq/replacewithshy)
-[![License](https://poser.pugx.org/codeq/replacewithshy/license)](LICENSE)
 
-# Neos - Replace with Shy
+# DEPRECATED IN FAVOR OF [carbon/hyphen](https://github.com/CarbonPackages/Carbon.Hyphen)
 
 Optional word-breaks are hard to enter in Neos CMS. This Neos package provides a helper to replace occurences of `||` with the Soft hyphen `&shy;`.
 
